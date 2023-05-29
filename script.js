@@ -34,7 +34,9 @@ teamMembers=[
 for(let i=0;i<teamMembers.length;i++){
     for (key in teamMembers[i]) {
         console.log(key,':', teamMembers[i][key]);
-        document.querySelector('.container').innerHTML=(teamMembers[i].foto);
      }
-    
+     const imgContainer=document.querySelector('.container');
+      let img=document.createElement('img');
+     img.src=teamMembers[i].foto
+     imgContainer.append(img);
 }
