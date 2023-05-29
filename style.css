@@ -4,7 +4,15 @@ body{
 .container{
     width: 70%;
     margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-img{
-    width:calc(100%/3) ;
+
+.card{
+    width: calc(100%/3);
+   
+}
+
+.img{
+    max-width: 100%;
 }
