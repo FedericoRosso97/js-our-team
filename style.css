@@ -10,11 +10,13 @@ body{
    font-family: 'Shadows Into Light', cursive;
    font-family: 'Ysabeau', sans-serif;
 }
+
 header{
     text-align: center;
     margin: 2rem;
     font-size: 1.5rem;
 }
+
 .container{
     width: 70%;
     margin:0 auto;
@@ -27,15 +29,20 @@ header{
 
 .card{
     width:calc(100%/3 - 40px );
-    margin: 20px;
+    margin:20px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.29);
     border-radius:10px;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .image-container{
    overflow: hidden;
-   margin-bottom: 1rem;
-   border-radius:10px;
+   object-fit: cover;
+}
+
+img{
+    object-fit: fill;
+    border-radius:10px;
+    width: 250px;
 }
