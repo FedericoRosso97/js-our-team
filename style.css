@@ -1,3 +1,10 @@
 body{
-    background-color: brown;
+    background-color: rgb(102, 102, 202);
+}
+.container{
+    width: 70%;
+    margin:0 auto;
+}
+img{
+    width:calc(100%/3) ;
 }

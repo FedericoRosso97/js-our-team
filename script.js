@@ -36,7 +36,15 @@ for(let i=0;i<teamMembers.length;i++){
         console.log(key,':', teamMembers[i][key]);
      }
      const imgContainer=document.querySelector('.container');
-      let img=document.createElement('img');
-     img.src=teamMembers[i].foto
-     imgContainer.append(img);
+     const role=teamMembers[i].ruolo;
+     const name=teamMembers[i].nome;
+      let img=document.createElement('img')
+      let divName=document.createElement('div')
+      let divSurname=document.createElement('div')
+      img.src=teamMembers[i].foto
+      imgContainer.append(img);
+      imgContainer.append(divName);
+      imgContainer.append(divSurname);
+      divName.append(name);
+      divSurname.append(role);
 }
