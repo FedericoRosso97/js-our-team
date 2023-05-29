@@ -38,7 +38,11 @@ for(let i=0;i<teamMembers.length;i++){
      const imgContainer=document.querySelector('.container');
      const divCard=document.createElement('div')
      divCard.classList.add('card')
+     divImg=document.createElement('div')
+     divImg.classList.add('image-container')
+     
      imgContainer.append(divCard);
+     divCard.append( divImg);
     
      const role=teamMembers[i].ruolo;
      const name=teamMembers[i].nome;
@@ -47,7 +51,8 @@ for(let i=0;i<teamMembers.length;i++){
      const divSurname=document.createElement('div')
       
      img.src=teamMembers[i].foto
-     divCard.append(img);
+     
+     divImg.append(img);
      divCard.append(divName);
      divCard.append(divSurname);
       
