@@ -36,5 +36,5 @@ for(let i=0;i<teamMembers.length;i++){
         console.log(key,':', teamMembers[i][key]);
         
      }
-     document.querySelector('.container').innerHTML=(teamMembers[i][key]);
+     document.querySelector('.container').innerHTML=(teamMembers[i].foto);
 }
